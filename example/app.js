@@ -48,7 +48,8 @@ async function compute(){
   {
     // hide spinner
     document.getElementById('loader').style.display = 'none'
-    // previous: '{ 0; }'
+    
+    // previous: '{ 0; }' use 'suirify' on gh outputs to simplify tree structure
     let data = JSON.parse(responseJson.values[0].InnerTree['{0}'][0].data)
     console.log(data)
     
