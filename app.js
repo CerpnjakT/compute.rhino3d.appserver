@@ -22,7 +22,8 @@ const argIndex = process.argv.indexOf('--computeUrl')
 if (argIndex > -1)
   computeUrl = process.argv[argIndex + 1]
 if (!computeUrl)
-  computeUrl = 'http://localhost:8081/' // default if nothing else exists
+//  computeUrl = 'http://localhost:8081/' // default if nothing else exists
+  computeUrl = 'http://rhino.jepa.fi:8081/' // default if nothing else exists
 app.set('computeUrl', computeUrl)
 console.log('COMPUTE_URL: ' + app.get('computeUrl'))
 
